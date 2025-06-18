@@ -1,0 +1,14 @@
+	FROM node:18-alpine
+	
+	WORKDIR /myapp
+	
+	COPY <все данные> ./
+	
+	RUN sudo apt install nodejs
+	# для express js
+	
+	# Порт, который слушает бэкенд
+	EXPOSE 3000
+	
+	# Команда запуска
+	CMD ["nodejs", "<название файла сервера>"]
